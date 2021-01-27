@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -10,11 +12,83 @@
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" id="c9T-eg-rRk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pink Background" translatesAutoresizingMaskIntoConstraints="NO" id="dN9-0T-2Rq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vIX-FL-8n9">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hqG-Vz-wvm">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VSQ-Ui-MMX" userLabel="View Logo">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="426"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Strobe Lite Logo" translatesAutoresizingMaskIntoConstraints="NO" id="9aS-cI-xyy">
+                                                        <rect key="frame" x="20" y="20" width="374" height="386"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="9aS-cI-xyy" firstAttribute="centerX" secondItem="VSQ-Ui-MMX" secondAttribute="centerX" id="9wZ-jc-p97"/>
+                                                    <constraint firstItem="9aS-cI-xyy" firstAttribute="top" secondItem="VSQ-Ui-MMX" secondAttribute="top" constant="20" id="DY8-Hq-tch"/>
+                                                    <constraint firstItem="9aS-cI-xyy" firstAttribute="centerY" secondItem="VSQ-Ui-MMX" secondAttribute="centerY" id="mp1-U2-xjg"/>
+                                                    <constraint firstItem="9aS-cI-xyy" firstAttribute="leading" secondItem="VSQ-Ui-MMX" secondAttribute="leading" constant="20" id="n3E-Js-05R"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XTo-Rn-BpU" userLabel="View Label">
+                                                <rect key="frame" x="0.0" y="426" width="414" height="426"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strobe Lite 1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBt-mo-dHg">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="426"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="tBt-mo-dHg" firstAttribute="centerX" secondItem="XTo-Rn-BpU" secondAttribute="centerX" id="2RH-Hd-xrl"/>
+                                                    <constraint firstItem="tBt-mo-dHg" firstAttribute="centerY" secondItem="XTo-Rn-BpU" secondAttribute="centerY" id="Was-Bh-acG"/>
+                                                    <constraint firstItem="tBt-mo-dHg" firstAttribute="leading" secondItem="XTo-Rn-BpU" secondAttribute="leading" id="e5y-p7-cqN"/>
+                                                    <constraint firstItem="tBt-mo-dHg" firstAttribute="top" secondItem="XTo-Rn-BpU" secondAttribute="top" id="h4o-bz-vsJ"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="XTo-Rn-BpU" secondAttribute="trailing" id="3UW-Xb-KWa"/>
+                                            <constraint firstItem="XTo-Rn-BpU" firstAttribute="top" secondItem="VSQ-Ui-MMX" secondAttribute="bottom" id="6fG-L2-liJ"/>
+                                            <constraint firstItem="VSQ-Ui-MMX" firstAttribute="top" secondItem="hqG-Vz-wvm" secondAttribute="top" id="Lpn-WV-GZd"/>
+                                            <constraint firstAttribute="trailing" secondItem="VSQ-Ui-MMX" secondAttribute="trailing" id="SkU-JI-Q0i"/>
+                                            <constraint firstItem="VSQ-Ui-MMX" firstAttribute="leading" secondItem="hqG-Vz-wvm" secondAttribute="leading" id="Ww5-kn-HPe"/>
+                                            <constraint firstItem="XTo-Rn-BpU" firstAttribute="leading" secondItem="hqG-Vz-wvm" secondAttribute="leading" id="erL-t6-QtA"/>
+                                            <constraint firstItem="XTo-Rn-BpU" firstAttribute="top" secondItem="VSQ-Ui-MMX" secondAttribute="bottom" id="iA9-Uq-Oh3"/>
+                                            <constraint firstAttribute="bottom" secondItem="XTo-Rn-BpU" secondAttribute="bottom" id="oXi-c9-PRb"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hqG-Vz-wvm" firstAttribute="top" secondItem="vIX-FL-8n9" secondAttribute="top" id="4lR-6a-CwT"/>
+                                    <constraint firstAttribute="trailing" secondItem="hqG-Vz-wvm" secondAttribute="trailing" id="KGM-pC-Fn3"/>
+                                    <constraint firstAttribute="bottom" secondItem="hqG-Vz-wvm" secondAttribute="bottom" id="O5t-Ji-n7f"/>
+                                    <constraint firstItem="hqG-Vz-wvm" firstAttribute="leading" secondItem="vIX-FL-8n9" secondAttribute="leading" id="ghw-Lx-iRo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LWZ-Dq-yiq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dN9-0T-2Rq" secondAttribute="trailing" id="1Gk-eU-you"/>
+                            <constraint firstItem="dN9-0T-2Rq" firstAttribute="leading" secondItem="c9T-eg-rRk" secondAttribute="leading" id="3oK-6q-Wv7"/>
+                            <constraint firstAttribute="bottom" secondItem="vIX-FL-8n9" secondAttribute="bottom" id="7Ia-CW-f1j"/>
+                            <constraint firstItem="vIX-FL-8n9" firstAttribute="top" secondItem="LWZ-Dq-yiq" secondAttribute="top" id="C0v-oy-uyO"/>
+                            <constraint firstAttribute="bottom" secondItem="dN9-0T-2Rq" secondAttribute="bottom" id="Hb2-O4-OXp"/>
+                            <constraint firstItem="vIX-FL-8n9" firstAttribute="leading" secondItem="LWZ-Dq-yiq" secondAttribute="leading" id="bWV-9W-83g"/>
+                            <constraint firstItem="dN9-0T-2Rq" firstAttribute="top" secondItem="c9T-eg-rRk" secondAttribute="top" id="gL2-GP-WYj"/>
+                            <constraint firstAttribute="trailing" secondItem="vIX-FL-8n9" secondAttribute="trailing" id="got-9T-NIw"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -22,4 +96,11 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Pink Background" width="736" height="736"/>
+        <image name="Strobe Lite Logo" width="966.5" height="600"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
